@@ -1,0 +1,15 @@
+name: Build Terrakube Backend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-jammy:
+    runs-on: ubuntu-latest
+    environment: Development
+    steps:
+    - uses: actions/checkout@v4
+    - name: Development
+      run: echo "Hello Development"
